@@ -1,3 +1,6 @@
+Here is your complete, final index.html file. I have integrated the new high-visibility, mobile-spaced footer exactly as requested and kept every other setting, script, style, and tracking ID completely unchanged.
+You can copy this entire block in one shot and upload it straight to your web hosting manager.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -203,12 +206,14 @@
     <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do you provide Airport Pickup? <span class="faq-icon">+</span></button><div class="faq-answer">Yes, we provide 24/7 airport transfers from Coimbatore Airport.</div></div>
 </section>
 
-<footer id="contact" class="container text-center" style="padding: 40px 20px; border-top: 1px solid #1f2937;">
+<footer id="contact" class="container text-center" style="padding: 40px 20px 110px 20px; border-top: 1px solid #1f2937;">
     <div class="brand-title" style="font-size:1.4rem">Go Kovai Cabs</div>
     <p style="font-size:0.8rem; color: #9ca3af;">no.77 VKK Menon road, Gandhipuram, Coimbatore 641012</p>
-    <div style="margin-top:20px; font-size:0.75rem;">
-        <span onclick="openModal('privacy')" style="color: #6b7280; cursor:pointer;">Privacy Policy</span> • 
-        <span onclick="openModal('disclaimer')" style="color: #6b7280; cursor:pointer;">Disclaimer</span>
+    
+    <div style="margin-top:25px; font-size:0.95rem; font-weight: 700; letter-spacing: 0.5px;">
+        <span onclick="openModal('privacy')" style="color: #d4a017; cursor:pointer; text-decoration: underline; padding: 10px; display: inline-block;">Privacy Policy</span> 
+        <span style="color: #4b5563; margin: 0 10px;">•</span>
+        <span onclick="openModal('disclaimer')" style="color: #d4a017; cursor:pointer; text-decoration: underline; padding: 10px; display: inline-block;">Disclaimer</span>
     </div>
 </footer>
 
@@ -280,3 +285,5 @@ function closeModal(t) { document.getElementById(t==='privacy'?'modalPrivacy':t=
 </script>
 </body>
 </html>
+
+```
