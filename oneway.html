@@ -9,6 +9,23 @@
       gtag('js', new Date());
       gtag('config', 'AW-18230380235');
     </script>
+    
+    <!-- Event snippet for Contact (3) conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18230380235/rOH-CPGy_9IcEMuN9vRD',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go Kovai Cabs | Intercity & One Way Drops</title>
@@ -125,14 +142,12 @@
 <div class="hero"><div class="container">
     
     <div class="header-nav">
-        <!-- EXACT OUTSTATION TEXT HERE -->
         <div class="tagline-pill">COIMBATORE'S GUARANTEED OUTSTATION SERVICE</div>
         <button class="three-dot-btn" onclick="toggleMenu()"><i class="fas fa-ellipsis-v"></i></button>
     </div>
     
     <div class="text-center">
         <h1 class="brand-title">Go Kovai Cabs</h1>
-        <!-- EXACT OUTSTATION TEXT HERE -->
         <h2 style="font-size: 1.8rem; color: #fff; line-height: 1.4; font-weight: 700; margin-bottom: 5px;">
             Intercity & One-Way Drops <br><span class="text-gold">Made Easy</span>
         </h2>
@@ -140,21 +155,18 @@
             Safe, Reliable, and On-Time. Every Single Time.
         </p>
 
-        <!-- EXACT OUTSTATION TEXT HERE -->
         <div class="live-status"><span class="live-dot"></span> Outstation Cabs Available Now</div>
         
-        <a href="tel:+919791918800" class="btn btn-gold sticky-pulse"><i class="fas fa-phone-alt"></i> TAP TO CALL: 9791918800</a>
-        <a href="https://wa.me/919791918800" class="btn btn-whatsapp-subtle"><i class="fab fa-whatsapp"></i> Inquiry via WhatsApp</a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="btn btn-gold sticky-pulse"><i class="fas fa-phone-alt"></i> TAP TO CALL: 9791918800</a>
+        <a href="https://wa.me/919791918800" onclick="return gtag_report_conversion(this.href);" class="btn btn-whatsapp-subtle"><i class="fab fa-whatsapp"></i> Inquiry via WhatsApp</a>
         
         <div class="hero-features-list">
-            <!-- EXACT OUTSTATION TEXT HERE -->
             <div class="hero-icon-tag"><i class="fas fa-bolt"></i> Instant Booking</div>
             <div class="hero-icon-tag"><i class="fas fa-hand-holding-dollar"></i> Flat Tariffs</div>
             <div class="hero-icon-tag"><i class="fas fa-user-shield"></i> Highway Verified Drivers</div>
         </div>
 
         <div class="stats-row">
-            <!-- EXACT OUTSTATION TEXT HERE -->
             <div class="text-center"><span class="text-gold" style="font-size: 1.3rem; font-weight: 700;">24 HR</span><br><small style="color: var(--text-grey); font-weight: 600;">Booking</small></div>
             <div class="text-center"><span class="text-gold" style="font-size: 1.3rem; font-weight: 700;">CLEAN</span><br><small style="color: var(--text-grey); font-weight: 600;">Vehicles</small></div>
             <div class="text-center"><span class="text-gold" style="font-size: 1.3rem; font-weight: 700;">LOWEST</span><br><small style="color: var(--text-grey); font-weight: 600;">Fares</small></div>
@@ -179,7 +191,6 @@
         <span class="form-label">Drop Destination</span>
         <input type="text" id="toCity" placeholder="Type drop destination...">
         
-        <!-- Get Taxi Manual KM Input Added Here -->
         <span class="form-label">Approximate Distance (KM)</span>
         <input type="number" id="manualKm" placeholder="Enter approximate KM...">
         
@@ -216,19 +227,19 @@
         
         <div id="fareResult" style="margin-top:15px; display:none; font-size: 1.05rem; font-weight: bold; color: #111827; background: #fffbeb; padding: 15px; border-radius: 8px; border: 2px dashed var(--primary-gold);"></div>
         
-        <a id="confirmBookingBtn" href="https://wa.me/919791918800" target="_blank" class="btn btn-gold" style="display:none; margin-top:10px; background:#22c55e; color:white;"><i class="fab fa-whatsapp"></i> SECURE FARE VIA WHATSAPP</a>
+        <a id="confirmBookingBtn" href="https://wa.me/919791918800" onclick="return gtag_report_conversion(this.href);" target="_blank" class="btn btn-gold" style="display:none; margin-top:10px; background:#22c55e; color:white;"><i class="fab fa-whatsapp"></i> SECURE FARE VIA WHATSAPP</a>
     </div>
 </section>
 
 <section class="container" id="routes-section">
     <h3 class="section-title">Popular Intercity Drop Cabs</h3>
     <div class="popular-routes-grid">
-        <a href="tel:+919791918800" class="route-call-pill">Coimbatore to Chennai One Way Drop Taxi <span>Call to Book ›</span></a>
-        <a href="tel:+919791918800" class="route-call-pill">Coimbatore to Bangalore One Way Drop Taxi <span>Call to Book ›</span></a>
-        <a href="tel:+919791918800" class="route-call-pill">Coimbatore to Madurai One Way Drop Taxi <span>Call to Book ›</span></a>
-        <a href="tel:+919791918800" class="route-call-pill">Coimbatore to Ooty Outstation Cab Tour <span>Call to Book ›</span></a>
-        <a href="tel:+919791918800" class="route-call-pill">Coimbatore to Salem Intercity Drop Taxi <span>Call to Book ›</span></a>
-        <a href="tel:+919791918800" class="route-call-pill">Coimbatore to Trichy Outstation Taxi <span>Call to Book ›</span></a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="route-call-pill">Coimbatore to Chennai One Way Drop Taxi <span>Call to Book ›</span></a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="route-call-pill">Coimbatore to Bangalore One Way Drop Taxi <span>Call to Book ›</span></a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="route-call-pill">Coimbatore to Madurai One Way Drop Taxi <span>Call to Book ›</span></a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="route-call-pill">Coimbatore to Ooty Outstation Cab Tour <span>Call to Book ›</span></a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="route-call-pill">Coimbatore to Salem Intercity Drop Taxi <span>Call to Book ›</span></a>
+        <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="route-call-pill">Coimbatore to Trichy Outstation Taxi <span>Call to Book ›</span></a>
     </div>
 </section>
 
@@ -266,7 +277,7 @@
             <div class="t-point"><i class="fas fa-check-circle"></i> Doddabetta Peak</div>
             <div class="t-point"><i class="fas fa-check-circle"></i> Rose Garden</div>
         </div>
-        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT OOTY BOOKING</a></div>
+        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT OOTY BOOKING</a></div>
     </div>
     
     <div class="tour-card">
@@ -277,7 +288,7 @@
             <div class="t-point"><i class="fas fa-check-circle"></i> Eravikulam Park</div>
             <div class="t-point"><i class="fas fa-check-circle"></i> Echo Point</div>
         </div>
-        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT MUNNAR BOOKING</a></div>
+        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT MUNNAR BOOKING</a></div>
     </div>
 
     <div class="tour-card">
@@ -288,7 +299,7 @@
             <div class="t-point"><i class="fas fa-check-circle"></i> Coaker's Walk</div>
             <div class="t-point"><i class="fas fa-check-circle"></i> Pine Forest</div>
         </div>
-        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT KODAI BOOKING</a></div>
+        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT KODAI BOOKING</a></div>
     </div>
 
     <div class="tour-card">
@@ -299,7 +310,7 @@
             <div class="t-point"><i class="fas fa-check-circle"></i> Lamb's Rock</div>
             <div class="t-point"><i class="fas fa-check-circle"></i> Catherine Falls</div>
         </div>
-        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT COONOOR BOOKING</a></div>
+        <div style="padding:12px; background:#050b14;"><a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="btn btn-gold" style="font-size:0.9rem; padding:12px; margin-bottom:0;"><i class="fas fa-phone-alt"></i> INSTANT COONOOR BOOKING</a></div>
     </div>
 </section>
 
@@ -314,8 +325,8 @@
 </footer>
 
 <div class="sticky-footer">
-    <a href="https://wa.me/919791918800" class="sticky-btn" style="background:transparent; border: 1px solid rgba(255,255,255,0.2); color:#fff; flex:0.4;"><i class="fab fa-whatsapp"></i> CHAT</a>
-    <a href="tel:+919791918800" class="sticky-btn sticky-pulse" style="background:var(--primary-gold); color:#050b14; flex:0.6;"><i class="fas fa-phone-alt"></i> TAP TO CALL NOW</a>
+    <a href="https://wa.me/919791918800" onclick="return gtag_report_conversion(this.href);" class="sticky-btn" style="background:transparent; border: 1px solid rgba(255,255,255,0.2); color:#fff; flex:0.4;"><i class="fab fa-whatsapp"></i> CHAT</a>
+    <a href="tel:+919791918800" onclick="return gtag_report_conversion(this.href);" class="sticky-btn sticky-pulse" style="background:var(--primary-gold); color:#050b14; flex:0.6;"><i class="fas fa-phone-alt"></i> TAP TO CALL NOW</a>
 </div>
 
 <div id="modalPrivacy" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('privacy')">&times;</span>	<h3>Privacy Policy</h3><p>We process data strictly to coordinate immediate fleet dispatches. Your privacy is fully handled using secure architecture properties.</p></div></div>
